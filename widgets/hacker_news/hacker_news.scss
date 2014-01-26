@@ -1,0 +1,49 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color: #ff8c00;
+$widget-color: #000000;
+$title-color: #ffffff;
+$score-color: #f2f2f2;
+$score-font-size: 1.2em;
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-hacker-news {
+  background-color: $background-color;
+  vertical-align: baseline !important;
+
+  .heading {
+    padding: 20px;
+
+    .title {
+      &:before {
+        color: white;
+        border: 1px solid white;
+        padding: 2px 5px;
+        margin-right: 7px;
+        content: "Y";
+      }
+
+      color: $widget-color;
+      padding-left: 5px;
+    }
+  }
+
+  .container {
+    .title {
+      color: $title-color;
+    }
+
+    .score {
+      padding-top: 20px;
+      color: $score-color;
+      font-size: $score-font-size;
+
+      &:before {
+        content: "\21e7";
+      }
+    }
+  }
+}
