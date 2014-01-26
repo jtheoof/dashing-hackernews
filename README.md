@@ -1,5 +1,3 @@
-A simple hacker news widget for Shopify dashing.
-
 Installation
 ============
 
